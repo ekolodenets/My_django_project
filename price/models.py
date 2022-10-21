@@ -15,7 +15,7 @@ class PriceCard(models.Model):
 class PriceTable(models.Model):
     pt_title = models.CharField(max_length=200, verbose_name='Service')
     pt_old_price = models.CharField(max_length=200, verbose_name='Old Price')
-    pt_price = models.CharField(max_length=200, verbose_name='Price')
+    pt_price = models.CharField(max_length=200, verbose_name='New Price')
 
     def __str__(self):
         return self.pt_title
